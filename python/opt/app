@@ -1,0 +1,15 @@
+#!/usr/bin/python3
+
+import time
+import ptvsd
+
+ptvsd.enable_attach()
+ptvsd.wait_for_attach()
+
+try:
+    while True:
+        msg = "Running"
+        print(msg)
+        time.sleep(5000)
+except Exception as E:
+    print(E)

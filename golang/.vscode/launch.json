@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Remote debug in Docker",
+            "type": "go",
+            "request": "attach",
+            "mode": "remote",
+            "remotePath": "/app/app",
+            "port": 3000,
+            "host": "172.19.0.2", 
+            "apiVersion": 1
+        }
+    ],
+}
